@@ -34,7 +34,7 @@ void setup() {
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
 
-  //Sensor
+
   pinMode(Trig, OUTPUT);
   pinMode(Echo, INPUT);
   Serial.begin(9600);
