@@ -43,6 +43,7 @@ void setup() {
   start();
 }
 void loop() {
+//THE LOOP MAKES THE CODE RUN AGAIN AND AGAIN 
  //GETS THE DISTANCE VALUE 
   getdistance();
   Serial.println(cm);
@@ -92,13 +93,13 @@ void turnright() {
 //FOR THE ROBOT TO MOVE LEFT 
 void turnleft() {
   digitalWrite(IN1, LOW);
-  digitalWrite(IN2, HIGH);
+  digitalWrite(IN2, HIGH); //LEFT MOTOR FOWARD
   digitalWrite(IN3, LOW);
-  digitalWrite(IN4, HIGH);
+  digitalWrite(IN4, HIGH); //RIGHT MOTOR BACKWARD 
 }
 //FOR THE ROBOT TO STOP 
 void Stop() {
-  digitalWrite(IN1, LOW);
+  digitalWrite(IN1, LOW); //NO PIN SET TO HIGH, THE MOTORS DONT MOVE SO THE ROBOT STOPS 
   digitalWrite(IN2, LOW);
   digitalWrite(IN3, LOW);
   digitalWrite(IN4, LOW);
